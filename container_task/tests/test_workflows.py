@@ -11,7 +11,7 @@ from pathlib import Path
 from .cases import WorkflowCase, WORKFLOW_CASES
 from flytekit.remote import FlyteRemote
 from flytekit.configuration import Config
-from ..config import target_project, target_domain
+from ..workflows.config import target_project, target_domain
 
 
 class TestWorkflow:

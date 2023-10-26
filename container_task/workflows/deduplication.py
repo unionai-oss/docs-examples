@@ -2,8 +2,8 @@ import flytekit
 from flytekit import task, workflow, ContainerTask, kwtypes, Resources, TaskMetadata
 from flytekit.types.file import FlyteFile
 from flytekit import Secret
-from ..config import registry_prefix, kaggle_task_image_name_and_tag, SECRET_KEY, SECRET_GROUP
-from ..images import dedupe_task_image_spec
+from .config import registry_prefix, kaggle_task_image_name_and_tag, SECRET_KEY, SECRET_GROUP
+from .images import dedupe_task_image_spec
 
 get_dataset = ContainerTask(
     name="get_dataset",
